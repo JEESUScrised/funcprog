@@ -2,36 +2,20 @@
 
 Задания по функциональному программированию (Clojure).
 
-## Угадай число (наоборот) — `game.clj`
+Репозиторий: [https://github.com/JEESUScrised/funcprog](https://github.com/JEESUScrised/funcprog)
 
-Классическая игра «Угадай число» в обратную сторону: вы загадываете число в диапазоне, программа его угадывает.
+## Структура
 
-```clojure
-(load-file "game.clj")
-(start 1 100)
-(guess-my-number)
-;; если загаданное число меньше — (smaller)
-;; если больше — (bigger)
-```
+| Папка | Задание | Ссылка |
+|-------|---------|--------|
+| [`guess-number/`](guess-number/) | Игра «Угадай число» наоборот | [открыть на GitHub](https://github.com/JEESUScrised/funcprog/tree/main/guess-number) |
+| [`plotter/`](plotter/) | Виртуальный плоттер (Clojure + TypeScript) | [открыть на GitHub](https://github.com/JEESUScrised/funcprog/tree/main/plotter) |
 
-| Функция | Описание |
-|---------|----------|
-| `start` | Начать новую игру с диапазоном `[n, m]` |
-| `guess-my-number` | Следующая попытка программы |
-| `smaller` | Загаданное число меньше последней попытки |
-| `bigger` | Загаданное число больше последней попытки |
+Каждое задание в отдельной папке — удобно сдавать ссылку на конкретную директорию.
 
-Состояние игры хранится в atom `game-state` (бинарный поиск по диапазону).
+## Ветки (опционально)
 
-## Виртуальный плоттер — `plotter.clj`
+На `main` лежат оба задания. При необходимости отдельной ветки под одно задание:
 
-Функциональная переписка `plotter.ts`: неизменяемое состояние, чистые преобразования, `loop`/`recur` вместо циклов `for`.
-
-```clojure
-(load-file "plotter.clj")
-(run-demo)
-```
-
-Команды плоттера: `move`, `turn`, `carriage-up`, `carriage-down`, `set-color`, `set-position`. Фигуры: `draw-triangle`, `draw-square`.
-
-Исходник на TypeScript (процедурный стиль): `plotter.ts`.
+- `guess-number` — только игра
+- `plotter` — только плоттер
