@@ -10,6 +10,7 @@
 |-------|---------|--------|
 | [`guess-number/`](guess-number/) | Игра «Угадай число» наоборот | [открыть на GitHub](https://github.com/JEESUScrised/funcprog/tree/main/guess-number) |
 | [`plotter/`](plotter/) | Виртуальный плоттер (Clojure + TypeScript) | [открыть на GitHub](https://github.com/JEESUScrised/funcprog/tree/main/plotter) |
+| [`url-shortener/`](url-shortener/) | REST API сокращения URL (Ring + Korma) | [открыть на GitHub](https://github.com/JEESUScrised/funcprog/tree/main/url-shortener) |
 
 Каждое задание в отдельной папке — удобно сдавать ссылку на конкретную директорию.
 
