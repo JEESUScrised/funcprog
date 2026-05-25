@@ -16,7 +16,21 @@
 
 ## Ветки (опционально)
 
-На `main` лежат оба задания. При необходимости отдельной ветки под одно задание:
+На `main` лежат все задания. Отдельные ветки — только одно задание:
 
-- `guess-number` — только игра
-- `plotter` — только плоттер
+| Ветка | Задание | Ссылка |
+|-------|---------|--------|
+| `guess-number` | Угадай число | [github.com/JEESUScrised/funcprog/tree/guess-number](https://github.com/JEESUScrised/funcprog/tree/guess-number) |
+| `plotter` | Плоттер | [github.com/JEESUScrised/funcprog/tree/plotter](https://github.com/JEESUScrised/funcprog/tree/plotter) |
+| `url-shortener` | Сокращение URL | [github.com/JEESUScrised/funcprog/tree/url-shortener](https://github.com/JEESUScrised/funcprog/tree/url-shortener) |
+
+## Leiningen (Windows)
+
+Если `lein` не в PATH, в `url-shortener/` скачайте обёртку:
+
+```powershell
+cd url-shortener
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein.bat" -OutFile lein.bat
+.\lein.bat self-install
+.\build.bat
+```

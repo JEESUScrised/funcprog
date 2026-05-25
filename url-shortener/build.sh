@@ -1,8 +1,15 @@
 #!/bin/bash
 
 # Скачивание зависимостей и сборка проекта
-lein deps
-lein uberjar
+LEIN_CMD="lein"
+if [ -f "./lein" ]; then
+  LEIN_CMD="./lein"
+elif [ -f "./lein.bat" ]; then
+  LEIN_CMD="./lein.bat"
+fi
+
+$LEIN_CMD deps
+$LEIN_CMD uberjar
 
 echo "Сборка завершена!"
 echo ""

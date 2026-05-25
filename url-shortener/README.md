@@ -12,13 +12,15 @@ chmod +x build.sh
 ./build.sh
 ```
 
-**Windows:**
+**Windows** (если `lein` не в PATH — сначала скачайте `lein.bat`):
 
-```bat
-build.bat
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein.bat" -OutFile lein.bat
+.\lein.bat self-install
+.\build.bat
 ```
 
-Требуется [Leiningen](https://leiningen.org/) и Java.
+Требуется [Leiningen](https://leiningen.org/) (или локальный `lein.bat`) и Java 11+.
 
 ## Запуск
 
@@ -59,6 +61,7 @@ url-shortener/
     └── cli.clj     — меню в терминале
 ```
 
-## Ссылка на GitHub
+## Ссылки на GitHub
 
-[https://github.com/JEESUScrised/funcprog/tree/main/url-shortener](https://github.com/JEESUScrised/funcprog/tree/main/url-shortener)
+- Папка на `main`: [funcprog/tree/main/url-shortener](https://github.com/JEESUScrised/funcprog/tree/main/url-shortener)
+- Отдельная ветка: [funcprog/tree/url-shortener](https://github.com/JEESUScrised/funcprog/tree/url-shortener)

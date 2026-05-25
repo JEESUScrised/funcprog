@@ -1,7 +1,12 @@
 @echo off
-call lein deps
+if exist lein.bat (
+  set LEIN_CMD=lein.bat
+) else (
+  set LEIN_CMD=lein
+)
+call %LEIN_CMD% deps
 if errorlevel 1 exit /b 1
-call lein uberjar
+call %LEIN_CMD% uberjar
 if errorlevel 1 exit /b 1
 echo.
 echo Сборка завершена!
